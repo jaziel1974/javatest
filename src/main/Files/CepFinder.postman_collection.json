@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "a4294271-a452-4f02-92e8-c06819a98b23",
+		"name": "CepFinder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10706236",
+		"_collection_link": "https://planetary-satellite-304858.postman.co/workspace/rsc-23~21adce60-05c2-4fd4-805c-7c242cc0d313/collection/13394923-a4294271-a452-4f02-92e8-c06819a98b23?action=share&source=collection_link&creator=10706236"
+	},
+	"item": [
+		{
+			"name": "Encontra endereço pelo CEP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/zipcode/query?zipCode=06913300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"zipcode",
+						"query"
+					],
+					"query": [
+						{
+							"key": "zipCode",
+							"value": "06913300"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona endereço do cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"1@5.com\",\r\n  \"street\": \"R Glória\",\r\n  \"number\": \"100\",\r\n  \"neighborhood\": \"Alto Belo\",\r\n  \"city\": \"Xanadu\",\r\n  \"state\": \"SP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encontra endereço por e-mail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customer/address/1@5.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"address",
+						"1@5.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
