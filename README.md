@@ -1,7 +1,7 @@
 # cepfinder
 
 ## Descrição
-Teste Java para verificação de habilidades com Java, Spring Boot, Unit Tests
+Teste Java para verificação de habilidades com Java, Spring Boot, Unit Tests.
 Trata-se de uma aplicação RestFul com três end-points:
 1. /zipcode/query?zipCode={{zipcode}}
    Get request
