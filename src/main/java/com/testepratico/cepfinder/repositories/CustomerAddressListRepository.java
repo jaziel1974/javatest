@@ -9,10 +9,3 @@ import java.util.UUID;
 public interface CustomerAddressListRepository extends JpaRepository<CustomerAddressListModel, UUID> {
     List<CustomerAddressListModel> findByEmail(String email);
 }
-
-/*
-//9 hints encontrados com o lint
-- unused imports
-- serialversionid unused na classe model
-- public methods in test classes
- */
