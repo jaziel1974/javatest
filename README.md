@@ -45,6 +45,7 @@ Esta aplicação utiliza:
 2. MySql  
 3. JUnit (para testes)  
 4. WireMock (para testes de acesso a apis externas)  
+5. H2 Memory Database (for JPA tests)
 
 ## Relatório do Lint  
 9 hints encontrados com o lint  
